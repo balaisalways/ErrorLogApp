@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "ErrorLogApp",
+      "default": true
+    }
+  ],
+  "name": "ErrorLogApp",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "52.0"
+}

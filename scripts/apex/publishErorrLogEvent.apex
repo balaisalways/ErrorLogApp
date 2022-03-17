@@ -1,0 +1,11 @@
+CDER_Log_Exception_Event__e evt = new CDER_Log_Exception_Event__e();
+evt.ExceptionType__c='Log exception.getTypeName()';
+evt.ErrorCause__c='Log exception.getCause(), make sure to set Cause before throwing';
+evt.ExceptionMessage__c='Log exception.getMessage() output';
+evt.ExceptionStackTrace__c = 'Log exception.getStackTraceString()';
+evt.LineNumber__c ='Log exception.getLineNumber()';
+evt.OriginComponent__c ='Salesforce Apex';
+evt.OriginApplication__c ='Some App Name';
+List<CDER_Log_Exception_Event__e> listEvt = new List<CDER_Log_Exception_Event__e>();
+listEvt.add(evt);
+EventBus.publish(listEvt);
