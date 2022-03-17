@@ -13,6 +13,7 @@ public with sharing class CDER_ErrorLoggerAction {
             errorLog.OriginApplication__c = evt.OriginApplication__c;
             errorLog.OriginComponent__c = evt.OriginComponent__c;
             errorLog.RecordId__c = evt.RecordId__c;
+            errorLog.Origin__c = evt.Origin__c;
         }
         try {
             insert errorLog;
