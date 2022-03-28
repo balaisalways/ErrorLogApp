@@ -6,9 +6,12 @@
     <columns>ExceptionMessage__c</columns>
     <columns>ExceptionStackTrace__c</columns>
     <columns>ExceptionType__c</columns>
+    <columns>Origin__c</columns>
     <columns>OriginApplication__c</columns>
     <columns>OriginComponent__c</columns>
+    <columns>Status__c</columns>
     <columns>OBJECT_ID</columns>
+    <columns>LAST_UPDATE</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

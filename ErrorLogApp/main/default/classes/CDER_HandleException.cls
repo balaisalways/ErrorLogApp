@@ -42,13 +42,16 @@ public class CDER_HandleException extends Exception{
             evt.ExceptionType__c = e.getTypeName();
             evt.ExceptionStackTrace__c = e.getStackTraceString();
             evt.LineNumber__c = String.valueOf(e.getLineNumber());  
-            evt.origin__c = (String.isBlank(origin) == true)? DEFAULT_ORIGIN : origin;       
+            evt.origin__c = origin;       
             evt.OriginComponent__c = comp;
             evt.OriginApplication__c = app;
             EventBus.publish(evt);
         }
+        catch(exception e){
+            System.debug('Unable to publish Platgorm Event: '+e.getMessage());
+        }
         finally {
-
+            //TODO: Implement email notification
         }
     }
 }

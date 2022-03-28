@@ -3,7 +3,7 @@
     <fullName>Origin__c</fullName>
     <externalId>false</externalId>
     <label>Origin</label>
-    <required>false</required>
+    <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -18,6 +18,11 @@
                 <fullName>Mulesoft</fullName>
                 <default>false</default>
                 <label>Mulesoft</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -1,12 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>OriginApplication__c</fullName>
-    <encryptionScheme>None</encryptionScheme>
     <externalId>false</externalId>
     <label>OriginApplication</label>
-    <length>255</length>
-    <required>false</required>
+    <required>true</required>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OMUFA</fullName>
+                <default>false</default>
+                <label>OMUFA</label>
+            </value>
+            <value>
+                <fullName>Cares</fullName>
+                <default>false</default>
+                <label>Cares</label>
+            </value>
+            <value>
+                <fullName>ResearchIND</fullName>
+                <default>false</default>
+                <label>ResearchIND</label>
+            </value>
+            <value>
+                <fullName>PLAIR</fullName>
+                <default>false</default>
+                <label>PLAIR</label>
+            </value>
+            <value>
+                <fullName>OrphanDrug</fullName>
+                <default>false</default>
+                <label>OrphanDrug</label>
+            </value>
+            <value>
+                <fullName>MeetingRequest</fullName>
+                <default>false</default>
+                <label>MeetingRequest</label>
+            </value>
+            <value>
+                <fullName>RDRC</fullName>
+                <default>false</default>
+                <label>RDRC</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

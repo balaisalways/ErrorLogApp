@@ -14,11 +14,12 @@ public with sharing class CDER_ErrorLoggerAction {
             errorLog.OriginComponent__c = evt.OriginComponent__c;
             errorLog.RecordId__c = evt.RecordId__c;
             errorLog.Origin__c = evt.Origin__c;
+            errorLog.Status__c = 'New';  //Default
         }
         try {
             insert errorLog;
         }
-        catch(DMLException e) {
+        catch(Exception e) {
             System.debug('The following exception has occurred: ' + e.getMessage());
         }
         
