@@ -1,6 +1,6 @@
 public class CDER_HandleException extends Exception{
 
-    public static String DEFAULT_ORIGIN='Salesforce';
+    public static final String DEFAULT_ORIGIN='Salesforce';
     
     public static void logException(Exception e){
         logException(e,'','','','','');
